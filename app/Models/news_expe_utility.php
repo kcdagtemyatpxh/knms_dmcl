@@ -36,7 +36,6 @@ class news_expe_utility extends Model
         $leagues = DB::table('news_expe_article as p')
         ->Join('news_expe_cate AS a', 'a.id', '=', 'p.cid_cate')
         ->select('p.id','p.name','p.alias','p.count_view','p.content','p.video','p.type','p.description','p.created_at','a.id_cate','a.cid_parent')
-        ->Join('news_expe_cate AS a', 'a.id', '=', 'p.cid_cate')
         ->where('p.status','1')
         ->where('a.status','1')
         ->where('p.type','2')
