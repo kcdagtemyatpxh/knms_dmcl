@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('apilogin','App\Http\Controllers\ApiController@apilogin')->name('apilogin');
+Route::get('trangchu','App\Http\Controllers\ApiController@trangchu')->name('trangchu');

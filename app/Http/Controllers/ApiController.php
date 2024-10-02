@@ -11,7 +11,7 @@ use App\Models\news_expe_cate;
 use App\Models\news_expe_article;
 class ApiController extends Controller
 {
-	public function apilogin(Request $request)
+	public function trangchu(Request $request)
     {
         $news_hot       = news_expe_article::FE_Home();
         $news_cate      = news_expe_cate::where('cid_parent','0')->where('status','1')->orderBy('id', 'desc')->get()->toArray();
