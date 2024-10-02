@@ -9,6 +9,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use App\Models\news_expe_cate;
 use App\Models\news_expe_article;
+use App\Models\news_expe_utility;
 class ApiController extends Controller
 {
 	public function trangchu(Request $request)
