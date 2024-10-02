@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('trangchu','App\Http\Controllers\ApiController@trangchu')->name('trangchu');
+Route::get('api/trangchu','App\Http\Controllers\ApiController@trangchu')->name('api.trangchu');
+Route::get('layout/trangchu','App\Http\Controllers\LayoutController@trangchu')->name('layout.trangchu');
